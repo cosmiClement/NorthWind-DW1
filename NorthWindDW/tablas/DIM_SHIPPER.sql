@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[DIM_SHIPPER] (
+    [ShipperID] INT NOT NULL,
+    [CompanyName] NVARCHAR(40) NOT NULL,
+
+    CONSTRAINT PK_DIM_SHIPPER
+        PRIMARY KEY (ShipperID)
+);

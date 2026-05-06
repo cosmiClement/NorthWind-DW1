@@ -56,21 +56,30 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
-    <Folder Include="tablas" />
+    <Folder Include="NorthWindOLTP" />
+    <Folder Include="NorthWindOLTP\tablas" />
+    <Folder Include="NorthWindDW" />
+    <Folder Include="NorthWindDW\tablas" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="tablas\Customers.sql" />
-    <Build Include="tablas\CustomerCustomerDemo.sql" />
-    <Build Include="tablas\CustomerDemographics.sql" />
-    <Build Include="tablas\Region.sql" />
-    <Build Include="tablas\Territories.sql" />
-    <Build Include="tablas\OrderDetails.sql" />
-    <Build Include="tablas\EmployeeTerritories.sql" />
-    <Build Include="tablas\Shippers.sql" />
-    <Build Include="tablas\Employees.sql" />
-    <Build Include="tablas\Orders.sql" />
-    <Build Include="tablas\Products.sql" />
-    <Build Include="tablas\Categories.sql" />
-    <Build Include="tablas\Suppliers.sql" />
+    <Build Include="NorthWindOLTP\tablas\Categories.sql" />
+    <Build Include="NorthWindOLTP\tablas\CustomerCustomerDemo.sql" />
+    <Build Include="NorthWindOLTP\tablas\CustomerDemographics.sql" />
+    <Build Include="NorthWindOLTP\tablas\Customers.sql" />
+    <Build Include="NorthWindOLTP\tablas\Employees.sql" />
+    <Build Include="NorthWindOLTP\tablas\EmployeeTerritories.sql" />
+    <Build Include="NorthWindOLTP\tablas\OrderDetails.sql" />
+    <Build Include="NorthWindOLTP\tablas\Orders.sql" />
+    <Build Include="NorthWindOLTP\tablas\Products.sql" />
+    <Build Include="NorthWindOLTP\tablas\Region.sql" />
+    <Build Include="NorthWindOLTP\tablas\Shippers.sql" />
+    <Build Include="NorthWindOLTP\tablas\Suppliers.sql" />
+    <Build Include="NorthWindOLTP\tablas\Territories.sql" />
+    <Build Include="NorthWindDW\tablas\DIM_CUSTOMER.sql" />
+    <Build Include="NorthWindDW\tablas\DIM_DATE.sql" />
+    <Build Include="NorthWindDW\tablas\DIM_EMPLOYEE.sql" />
+    <Build Include="NorthWindDW\tablas\DIM_PRODUCT.sql" />
+    <Build Include="NorthWindDW\tablas\DIM_SHIPPER.sql" />
+    <Build Include="NorthWindDW\tablas\FACT_SALES.sql" />
   </ItemGroup>
 </Project>

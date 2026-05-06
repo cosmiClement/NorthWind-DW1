@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[DIM_EMPLOYEE] (
+    [EmployeeID] INT NOT NULL,
+    [FullName] NVARCHAR(50) NOT NULL,
+    [Title] NVARCHAR(30) NULL,
+    [City] NVARCHAR(15) NULL,
+    [Country] NVARCHAR(15) NULL,
+
+    CONSTRAINT PK_DIM_EMPLOYEE
+        PRIMARY KEY (EmployeeID)
+);
