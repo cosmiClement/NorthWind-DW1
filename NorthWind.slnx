@@ -1,6 +1,20 @@
 <Solution>
-  <Project Path="NorthWind.sqlproj" Id="cbd97629-ff69-436c-bd0a-25a359da1385">
-    <Build />
-    <Deploy />
-  </Project>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="Development" />
+    <BuildType Name="Release" />
+  </Configurations>
+  <Folder Name="/DataBases/">
+    <Project Path="NorthWind.sqlproj" Id="cbd97629-ff69-436c-bd0a-25a359da1385">
+      <BuildType Solution="Development|*" Project="Release" />
+      <Build />
+      <Deploy />
+    </Project>
+  </Folder>
+  <Folder Name="/ETL/">
+    <Project Path="C:/Users/Lenovo/source/repos/SSIS_Demo/SSIS_Demo.dtproj" Type="c9674dcb-5085-4a16-b785-4c70dd1589bd">
+      <BuildType Project="Development" />
+      <Platform Project="?" />
+    </Project>
+  </Folder>
 </Solution>
